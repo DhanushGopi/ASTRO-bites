@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255,242,197) 0%,rgba(255,242,197) 40%,rgba(255,150,189,1) 41%,rgba(255,150,189,1) 100%);
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: rgb(255,242,197);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 200px;
+    height: 60px;
+}
+
+.navright {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+}
+
+.navright a{
+    text-decoration: none;
+    color: rgb(102,51,0);
+}
+
+/*main element1*/
+.element1 {
+    padding: 0%;
+    background: linear-gradient(rgba(255,242,197) 0%,rgba(255,242,197) 40%,rgba(255,150,189,1) 41%,rgba(255,150,189,1) 100%);
+}
+
+.element1 img{
+    padding: 0%;
+    width: 100%;
+}
+/*main element2*/
+
+.element2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,150,189,1);
+}
+
+.cta {
+    padding: 1em 3em;
+    text-align: center;
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transform: scale(1);
+    transition-property: color transform background-color;
+    transition-duration: 1000ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.cta:hover{
+    color:brown;
+    background-color: rgba(255,150,189,1) ;
+    transform: scale(1.3);
+    border: 1px solid brown;
+}
+.element2 img{
+    width: 100%;
+}
+
+/*main element3*/
+
+.element3 {
+    background-color: rgba(255,150,189,1);
+}
+
+.element3 img{
+    width: 100%;
+}
+
+ /*Responsive*/
+
+
+/* Responsive Samsung Galaxy Fold (280x653) */
+@media screen and (min-width:280px) {
+
+    .navright{
+        align-items: center;
+        column-gap:1em;
+        font-size: 10px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 30px;        
+    }
+
+    .cta {
+        padding: 0.5em 1em;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+}
+
+/* Responsive Nokia Lumia 520 (320x533) */
+@media screen and (min-width:320px) {
+
+    .navright{
+        font-size: 14px;
+    }
+
+    .cta {
+        font-size: 20px;
+    }
+}
+
+/* Responsive Surface Duo (540x720)*/
+@media screen and (min-width:540px) {
+
+    #logo{
+        width: 150px;
+        height: 45px;
+    }
+    
+    .navright{
+        font-size: 16px;
+    }
+
+    .cta {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Ipad mini (768x1024)*/
+@media screen and (min-width:768px) {
+
+    #logo{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .navright{
+        font-size: 20px;
+    }
+}
+
+/* Responsive NestHub (1024x600)*/
+@media screen and (min-width:1024) {
+
+    #logo{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .navright{
+        font-size: 24px;
+        column-gap: 2em;
+    }
+
+    .cta {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Nest Hub Max (1280x800)*/
+@media screen and (min-width:1280px) {
+
+    #logo{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .navright{
+        font-size: 28px;
+        column-gap: 3em;
+    }
+
+    .cta {
+        font-size: 28px;
+    }
+}
+
+/* Responsive  (1500x800)*/
+@media screen and (min-width:1500px) {
+
+    #logo{
+        width: 200px;
+        height: 60px;
+    }
+    
+    .navright{
+        font-size: 30px;
+        column-gap: 3em;
+    }
+
+    .cta {
+        font-size: 30px;
+    }
+}
+
+
+/* Responsive  (2140x1080)*/
+@media screen and (min-width:2140px) {
+
+    .navbar{
+        padding: 3em;
+    }
+
+    #logo{
+        width: 300px;
+        height: 80px;
+    }
+    
+    .navright{
+        font-size: 40px;
+        column-gap: 3em;
+    }
+
+    .cta {
+        font-size: 40px;
+    }
+}
